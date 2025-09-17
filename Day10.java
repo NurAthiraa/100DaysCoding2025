@@ -5,6 +5,6 @@ public class Day10 {
         int total = HARGA_AYAM_GEPREK * jumlahPorsi;
 
         System.out.println("Beli " + jumlahPorsi + " porsi ayam geprek: Rp" + total);
-        System.out.println("Dompet nangis! Menapa bisa etorr ");
+        System.out.println("Dompet nangis! Bahkan kalkulator ikut shock!");
     }
 }
