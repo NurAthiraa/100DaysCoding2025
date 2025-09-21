@@ -23,8 +23,8 @@ import java.util.Scanner;
             // 1 tipe data kondisi
             boolean dataBoolean = Boolean.parseBoolean(strBool);
 
-            // Output hasil konversi dengan gaya kocak
-            System.out.println("\n=== HASIL KONVERSI NGAKAK ===");
+            // Output hasil konversi 
+            System.out.println("\n=== HASIL KONVERSI  ===");
             System.out.println("String ke byte    : " + dataByte + " (sekecil hatimu)");
             System.out.println("String ke short   : " + dataShort + " (kayak liburan semester, cepet banget habis)");
             System.out.println("String ke int     : " + dataInt + " (integer banget, bukan integernet)");
