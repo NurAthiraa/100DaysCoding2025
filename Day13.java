@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Evalusisoal1 {
+public class Evaluasisoal1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -50,7 +50,7 @@ public class Evalusisoal1 {
 
 
 import java.util.Scanner;
-public class Evalusisoal2 {
+public class Evaluasisoal2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -101,8 +101,9 @@ public class Evalusisoal2 {
     }
 }
 
+
 import java.util.Scanner;
-public class Evalusisoal3 {
+public class Evaluasisoal3 {
     public static void main(String[] args) {
         Scanner sc =  new Scanner(System.in);
          final double PHI = 3.14;
