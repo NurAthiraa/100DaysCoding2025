@@ -54,4 +54,5 @@ public class Day40 {
 
         SC.close();
     }
-                    }
+}
+
