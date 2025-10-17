@@ -11,7 +11,7 @@ public class Day40 {
         System.out.print("Masukkan angka pertama: ");
         double angka1 = SC.nextDouble();
 
-        System.out.print("Masukkan operator (+, -, *, /): ");
+        System.out.print("Masukkan operator (+, -, *, /, %): ");
         char operator = SC.next().charAt(0);
 
         System.out.print("Masukkan angka kedua: ");
@@ -37,8 +37,15 @@ public class Day40 {
             } else {
                 System.out.println("Error: Pembagian dengan nol tidak diperbolehkan!");
             }
+        } else if (operator == '%') {
+            if (angka2 != 0) {
+                hasil = angka1 % angka2;
+                System.out.println("Hasil: " + angka1 + " % " + angka2 + " = " + hasil);
+            } else {
+                System.out.println("Error: Sisa bagi dengan nol tidak diperbolehkan!");
+            }
         } else {
-            System.out.println("Operator tidak dikenal! Gunakan (+, -, *, /)");
+            System.out.println("Operator tidak dikenal! Gunakan (+, -, *, /, %)");
         }
 
         System.out.println("==================================");
@@ -47,4 +54,4 @@ public class Day40 {
 
         SC.close();
     }
-}
+                    }
