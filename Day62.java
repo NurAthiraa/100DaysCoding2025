@@ -13,7 +13,7 @@ public class Day62 {
 
         // for loop untuk menjumlahkan
         for (int i = 1; i <= n; i++) {
-            total += i; // proses penjumlahan
+            total += i; 
             System.out.print(i);
 
             if (i < n) {
