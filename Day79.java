@@ -1,38 +1,49 @@
 import java.util.Scanner;
 
-public class Day79 {
+public class day79 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
-        String usernameReg;
-        String passwordReg;
+        Scanner input = new Scanner(System.in);
 
-        System.out.println("=== REGISTRASI AKUN ===");
-        System.out.print("Buat Username : ");
-        usernameReg = sc.nextLine().trim();
+        System.out.println("\n==============================");
+        System.out.println("       REGISTRASI AKUN");
+        System.out.println("==============================");
 
-        System.out.print("Buat Password : ");
-        passwordReg = sc.nextLine().trim();
-
-        System.out.println("\nAkun berhasil dibuat!\n");
-
-        System.out.println("=== LOGIN AKUN ===");
+        String username;
+        String password;
 
         while (true) {
-            System.out.print("Masukkan Username : ");
-            String userLogin = sc.nextLine().trim();
+            System.out.print("\nBuat Username : ");
+            username = input.nextLine();
 
-            System.out.print("Masukkan Password : ");
-            String passLogin = sc.nextLine().trim();
+            System.out.print("Buat Password : ");
+            password = input.nextLine();
 
-            if (userLogin.equals(usernameReg) && passLogin.equals(passwordReg)) {
-                System.out.println("\nLogin Berhasil!");
-                break;
+            if (username.isEmpty() || password.isEmpty()) {
+                System.out.println("\nError: Username dan Password tidak boleh kosong!");
             } else {
-                System.out.println("Gagal: Username atau Password salah! Silakan coba lagi.\n");
+                System.out.println("\nRegistrasi Berhasil!");
+                break;
             }
         }
 
-        sc.close();
+        System.out.println("\n==============================");
+        System.out.println("          LOGIN AKUN");
+        System.out.println("==============================");
+
+        while (true) {
+            System.out.print("\nMasukkan Username : ");
+            String loginUser = input.nextLine();
+
+            System.out.print("Masukkan Password : ");
+            String loginPass = input.nextLine();
+
+            if (loginUser.equals(username) && loginPass.equals(password)) {
+                System.out.println("\nLogin Berhasil! Pintu Terbuka");
+                break;
+            } else {
+                System.out.println("\nGagal: Username atau Password salah! Coba lagi.");
+            }
+        }
     }
 }
