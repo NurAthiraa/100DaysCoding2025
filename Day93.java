@@ -1,18 +1,16 @@
 public class Day93 {
     public static void main(String[] args) {
 
-        double angka1 = 7.2;
-        double angka2 = 7.6;
+        double angka1 = 3.1;
+        double angka2 = 3.9;
+        double angka3 = 3.4;
 
-        System.out.println("=== Contoh Method ceil(), floor(), dan round() ===");
-        System.out.println("Angka: " + angka1);
-        System.out.println("ceil  : " + Math.ceil(angka1));
-        System.out.println("floor : " + Math.floor(angka1));
-        System.out.println("round : " + Math.round(angka1));
+        double hasilCeil = Math.ceil(angka1);     // naik ke atas
+        double hasilFloor = Math.floor(angka2);   // turun ke bawah
+        long hasilRound = Math.round(angka3);     // ke terdekat
 
-        System.out.println("\nAngka: " + angka2);
-        System.out.println("ceil  : " + Math.ceil(angka2));
-        System.out.println("floor : " + Math.floor(angka2));
-        System.out.println("round : " + Math.round(angka2));
+        System.out.println("Ceil dari " + angka1 + " = " + hasilCeil);
+        System.out.println("Floor dari " + angka2 + " = " + hasilFloor);
+        System.out.println("Round dari " + angka3 + " = " + hasilRound);
     }
 }
